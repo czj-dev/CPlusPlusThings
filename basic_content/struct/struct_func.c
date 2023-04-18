@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-struct Base
+typedef struct Base
 { // public
     int v1;
     //    public:      //error
@@ -18,6 +18,10 @@ void Base()
 }
 // struct Base base1;  //ok
 // Base base2; //error
+
+typedef  struct LinkQueueStack{
+ struct  LinkQueueStack *next;
+}LkQueStack;
 
 int main()
 {
