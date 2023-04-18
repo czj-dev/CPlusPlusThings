@@ -4,4 +4,10 @@ bazel-bin
 bazel-out
 bazel-testlogs
 bazel-cplusplus_bazel
+cmake-build-debug
+BaseC
+TestC
 .vscode
+.vs
+.idea
+.clwb
