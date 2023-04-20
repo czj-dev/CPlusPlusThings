@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-int main() {
-  const int b = 10;
-  const string s = "helloworld";
+int main()
+{
+#define FOURTY_TWO = 10;
+  cout << FOURTY_TWO;
 }
