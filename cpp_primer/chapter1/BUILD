@@ -4,5 +4,10 @@ load("@rules_cc//cc:defs.bzl", "cc_binary")
 cc_binary(
     name = "cout",
     srcs = ["cout.cpp"],
-    copts = ["-std=c++11"]
+)
+
+# build char function
+cc_binary(
+    name = "char",
+    srcs = ["char.cpp"],
 )
