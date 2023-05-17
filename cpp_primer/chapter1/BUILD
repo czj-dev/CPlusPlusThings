@@ -11,3 +11,9 @@ cc_binary(
     name = "char",
     srcs = ["char.cpp"],
 )
+
+# build pointer function
+cc_binary(
+    name = "pointer",
+    srcs = ["pointer.cpp"],
+)
