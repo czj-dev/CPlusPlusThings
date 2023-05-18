@@ -27,7 +27,7 @@ int main() {
     // 定义于函数体内的内置类型的对象如果没有初始化，则其值未定义。类的对象如果没有显示地初始化，则其值由类确定。
 
     // extern 关键字可以让我们只声明而不定义变量，如果要在多个文件中使用同一个变量，就必须将声明和定义分离。此时，变量的定义可以出现且只能出现在
-    //一个文件中，而其他用到该变量的文件必须对其进行生命，却绝对不能重复定义
+    // 一个文件中，而其他用到该变量的文件必须对其进行生命，却绝对不能重复定义
     extern int i; // 声明而非定义 i
     int j; // 声明并且定义 i
     //    extern int f = 9;  声明并且定义 f ，如果在函数体内这样做会报错
@@ -37,4 +37,13 @@ int main() {
     int &newRefVal = refVal;
     refVal = 98;
     std::cout << "reference :" << newRefVal << std::endl;
+
+    // C++ 并没有限制修饰符的个数书写限制，修饰符数量的不同也会对变量的含义产生影响
+    int ival = 1024;
+    int *pi = &ival; // pi 指向一个 int 型的数
+    int **ppi = &pi; // ppi 指向一个 int 型的指针
+    std::cout << "The value of ival\n"
+              << "direct value:" << ival << "\n"
+              << "indirect value:" << *pi << "\n"
+              << "doubly indirect value:" << **ppi << std::endl;
 }
